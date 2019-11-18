@@ -288,7 +288,7 @@ export function FlagIcon({
     <img
       {...props}
       alt={code}
-      src={`https://unpkg.com/${name}@${version}/assets/${code}.svg`}
+      src={`./assets/images/icons/CountryFlags/${code}.svg`}
       style={{
         ...style,
         height: `${size}px`,
