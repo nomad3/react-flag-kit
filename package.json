@@ -28,7 +28,8 @@
     "build": "yarn build:bundle && yarn build:typings && yarn build:docs",
     "build:docs": "docz build",
     "build:bundle": "rollup -c rollup.config.js",
-    "build:typings": "node scripts/build-typings.js"
+    "build:typings": "node scripts/build-typings.js",
+    "postinstall": "tsc --outDir ./build"
   },
   "peerDependencies": {
     "react": "^16.6.0"
